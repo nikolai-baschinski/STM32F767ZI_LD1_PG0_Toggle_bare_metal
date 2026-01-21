@@ -11,5 +11,5 @@ git clone https://github.com/nikolai-baschinski/STM32F767ZI_LD1_PG0_Toggle_bare_
 
 ![Nucleo-F767ZI](/doc/Nucleo-F767ZI.jpg)
 
-![Oszilloscope on PG0](/doc/oscilloscope%20PG0%2050%20Hz.bmp")
+![Oszilloscope on PG0](/doc/oscilloscope%20PG0%2050%20Hz.bmp)
 
