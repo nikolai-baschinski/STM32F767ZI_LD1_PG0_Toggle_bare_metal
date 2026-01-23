@@ -49,7 +49,7 @@ void init_PLL()
 
     // Enable the PLL
     RCC->CR |= RCC_CR_PLLON;
-    while(!(RCC->CR & (1<<25))); // check the ready flag of the PLL
+    while(!(RCC->CR & RCC_CR_PLLRDY)); // check the ready flag of the PLL
 
     // System Clock Mux
     RCC->CFGR |= RCC_CFGR_SW_PLL;
