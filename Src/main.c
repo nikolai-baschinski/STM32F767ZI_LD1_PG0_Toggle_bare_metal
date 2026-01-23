@@ -28,8 +28,8 @@ void TIM2_IRQHandler(void)
 
 void init_PLL()
 {
-    RCC->CR |= RCC_CR_HSEON;  // Clock control register, Enable High Speed External Clock
     RCC->CR |= RCC_CR_HSEBYP; // Clock control register, Enable bypass, the clock comes from the SWD
+    RCC->CR |= RCC_CR_HSEON;  // Clock control register, Enable High Speed External Clock
     while(!(RCC->CR & RCC_CR_HSERDY)); // Clock control register, wait until the HSE is ready
 
     RCC->APB1ENR |= RCC_APB1ENR_PWREN; // Enable the peripheral clock
